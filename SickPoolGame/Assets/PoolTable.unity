@@ -221,10 +221,9 @@ GameObject:
   - 4: {fileID: 727795001}
   - 212: {fileID: 727795000}
   - 252: {fileID: 727795003}
-  - 114: {fileID: 727795004}
-  - 58: {fileID: 727795002}
-  - 50: {fileID: 727795005}
-  m_Layer: 0
+  - 54: {fileID: 727795004}
+  - 114: {fileID: 727795002}
+  m_Layer: 8
   m_Name: Whiteball
   m_TagString: White Ball
   m_Icon: {fileID: 0}
@@ -269,19 +268,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
---- !u!58 &727795002
-CircleCollider2D:
+--- !u!114 &727795002
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 727794999}
   m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.39999998
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac56a5cf2102746809f706431073ccee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilt: {x: 0, y: 0, z: 0}
+  speed: 0
 --- !u!252 &727795003
 SurfaceEffector2D:
   m_ObjectHideFlags: 0
@@ -299,33 +298,21 @@ SurfaceEffector2D:
   m_UseContactForce: 0
   m_UseFriction: 1
   m_UseBounce: 1
---- !u!114 &727795004
-MonoBehaviour:
+--- !u!54 &727795004
+Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 727794999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29bd3cb5aa9190c42aa8b23b831792ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!50 &727795005
-Rigidbody2D:
   serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 727794999}
-  m_Mass: .00999999978
-  m_LinearDrag: 0
+  m_Mass: 1
+  m_Drag: 0
   m_AngularDrag: .0500000007
-  m_GravityScale: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
   m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1738262142
 GameObject:
   m_ObjectHideFlags: 0
