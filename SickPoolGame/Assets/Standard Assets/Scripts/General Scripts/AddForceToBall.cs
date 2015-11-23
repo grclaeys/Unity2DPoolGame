@@ -25,9 +25,9 @@ public class AddForceToBall : MonoBehaviour {
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "Pool Cue")
+        if (col.gameObject.name == "White Ball")
         {
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 1000f);
+            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 200f);
             
             //rb.AddForce(transform.forward * thrust);
             //other.rigidbody.AddForce(Vector2.up * hoverForce, ForceMode.Acceleration);
