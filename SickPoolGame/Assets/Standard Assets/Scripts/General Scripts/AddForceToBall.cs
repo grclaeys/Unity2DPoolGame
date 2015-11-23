@@ -15,7 +15,11 @@ public class AddForceToBall : MonoBehaviour {
 	void Update () {
         //OnCollisionEnter(Collision.gameObject);
         //rb.AddForce(transform.forward * thrust);
-        other.rigidbody.AddForce(Vector2.up * hoverForce, ForceMode.Acceleration);
+        //other.rigidbody.AddForce(Vector2.up * hoverForce, ForceMode.Acceleration);
+
+        if(Input.GetKeyDown("p")) {
+            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 500f);
+        }
     }
 
 
@@ -23,8 +27,10 @@ public class AddForceToBall : MonoBehaviour {
     {
         if (col.gameObject.name == "Pool Cue")
         {
+            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 200f);
+            
             //rb.AddForce(transform.forward * thrust);
-            other.rigidbody.AddForce(Vector2.up * hoverForce, ForceMode.Acceleration);
+            //other.rigidbody.AddForce(Vector2.up * hoverForce, ForceMode.Acceleration);
 
         }
     }
