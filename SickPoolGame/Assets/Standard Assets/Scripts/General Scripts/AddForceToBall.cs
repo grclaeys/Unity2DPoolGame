@@ -27,7 +27,7 @@ public class AddForceToBall : MonoBehaviour {
     {
         if (col.gameObject.name == "Pool Cue")
         {
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 200f);
+            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 1000f);
             
             //rb.AddForce(transform.forward * thrust);
             //other.rigidbody.AddForce(Vector2.up * hoverForce, ForceMode.Acceleration);
