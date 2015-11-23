@@ -298,7 +298,6 @@ GameObject:
   - 212: {fileID: 727795000}
   - 50: {fileID: 727795002}
   - 58: {fileID: 727795003}
-  - 114: {fileID: 727795004}
   m_Layer: 8
   m_Name: whiteBall
   m_TagString: White Ball
@@ -373,20 +372,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.40762568
---- !u!114 &727795004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 727794999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99b6455a8fde9c048ae58ec4beb137b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 0
-  rb: {fileID: 0}
-  hoverForce: 0
 --- !u!1 &1610602311
 GameObject:
   m_ObjectHideFlags: 0
