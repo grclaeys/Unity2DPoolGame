@@ -3,9 +3,9 @@ using System.Collections;
 
 public class AddForceToBall : MonoBehaviour {
     //Collision col = Collision.gameObject;
-    public float thrust;
+    //public float thrust;
     public Rigidbody rb;
-    public float hoverForce;
+    //public float hoverForce;
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
@@ -17,9 +17,10 @@ public class AddForceToBall : MonoBehaviour {
         //rb.AddForce(transform.forward * thrust);
         //other.rigidbody.AddForce(Vector2.up * hoverForce, ForceMode.Acceleration);
 
-        if(Input.GetKeyDown("p")) {
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 500f);
-        }
+        //if(Input.GetKeyDown("p")) {
+        //    GetComponent<Rigidbody2D>().AddForce(Vector2.up * 500f);
+        ////}
+        //OnCollisionEnter(Collision);
     }
 
 
