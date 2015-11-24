@@ -5,8 +5,6 @@ public class AddForceToBall : MonoBehaviour {
     //Collision col = Collision.gameObject;
     //public float thrust;
     public Rigidbody rb;
-    //public float hoverForce;
-    // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
     }
@@ -28,11 +26,13 @@ public class AddForceToBall : MonoBehaviour {
     {
         if (col.gameObject.name == "White Ball")
         {
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 200f);
-            
-            //rb.AddForce(transform.forward * thrust);
-            //other.rigidbody.AddForce(Vector2.up * hoverForce, ForceMode.Acceleration);
+            foreach (ContactPoint contact in col.contacts)
+            {
+                GetComponent<Rigidbody2D>().AddForce(Vector2.up * 200f);
 
+                //rb.AddForce(transform.forward * thrust);
+                //other.rigidbody.AddForce(Vector2.up * hoverForce, ForceMode.Acceleration);
+            }
         }
     }
 }
