@@ -19,7 +19,7 @@ Loading C:\Users\claegar16\Desktop\Unity2DPoolGame\SickPoolGame\PoolYo_Data\Mana
 Platform assembly: C:\Users\claegar16\Desktop\Unity2DPoolGame\SickPoolGame\PoolYo_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\claegar16\Desktop\Unity2DPoolGame\SickPoolGame\PoolYo_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\claegar16\Desktop\Unity2DPoolGame\SickPoolGame\PoolYo_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.049 seconds
+- Completed reload, in  0.050 seconds
 desktop: 1280x1024 60Hz; virtual: 1280x1024 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
@@ -27,4 +27,4 @@ XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Initialized touch support.
 Platform assembly: C:\Users\claegar16\Desktop\Unity2DPoolGame\SickPoolGame\PoolYo_Data\Managed\System.dll (this message is harmless)
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1404 -> priority: 1 
+  Thread -> id: 1f24 -> priority: 1 

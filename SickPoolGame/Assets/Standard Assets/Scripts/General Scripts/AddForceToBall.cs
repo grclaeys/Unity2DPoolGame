@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class AddForceToBall : MonoBehaviour {
     //Collision col = Collision.gameObject;
@@ -15,24 +16,24 @@ public class AddForceToBall : MonoBehaviour {
         //rb.AddForce(transform.forward * thrust);
         //other.rigidbody.AddForce(Vector2.up * hoverForce, ForceMode.Acceleration);
 
-        //if(Input.GetKeyDown("p")) {
-        //    GetComponent<Rigidbody2D>().AddForce(Vector2.up * 500f);
-        ////}
+        if (Input.GetKeyDown("p"))
+        {
+            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 1000f);
+        }
         //OnCollisionEnter(Collision);
     }
 
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "White Ball")
+        if (col.gameObject.name == "White Ball" || col.gameObject.name == "Pool Cue")
         {
-            foreach (ContactPoint contact in col.contacts)
-            {
-                GetComponent<Rigidbody2D>().AddForce(Vector2.up * 200f);
+            //foreach (ContactPoint contact in col)
+            //{
 
-                //rb.AddForce(transform.forward * thrust);
-                //other.rigidbody.AddForce(Vector2.up * hoverForce, ForceMode.Acceleration);
-            }
+                GetComponent<Rigidbody2D>().AddForce(Vector2.up * 1000f);
+
+            //}
         }
     }
 }
