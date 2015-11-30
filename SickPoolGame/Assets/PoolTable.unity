@@ -352,6 +352,7 @@ GameObject:
   - 212: {fileID: 727795000}
   - 50: {fileID: 727795002}
   - 58: {fileID: 727795003}
+  - 114: {fileID: 727795004}
   m_Layer: 8
   m_Name: whiteBall
   m_TagString: White Ball
@@ -392,8 +393,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 727794999}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.94000006, y: -.0799999982, z: 0}
-  m_LocalScale: {x: .0822776556, y: .0854630396, z: 1}
+  m_LocalPosition: {x: 2.9000001, y: -.0900000036, z: 0}
+  m_LocalScale: {x: .0915177166, y: .0895697251, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -426,6 +427,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.40762568
+--- !u!114 &727795004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 727794999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99b6455a8fde9c048ae58ec4beb137b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
 --- !u!1 &1027191598
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +736,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1738262142}
-  m_Mass: 10
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
