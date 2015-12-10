@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TableToMenu : MonoBehaviour{
+public class QuitGame : MonoBehaviour{
     void Update(){
         if (Input.GetKeyDown(KeyCode.Escape))
-            Application.Quit();
+            Application.LoadLevel("MainMenu");
     }
 }
 		
