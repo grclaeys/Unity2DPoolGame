@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class RotateCue : MonoBehaviour {
     private float degree;
     private float angle;
+    public float totalAngle = 90f;
 
     // Use this for initialization
     void Start ()
@@ -17,14 +19,40 @@ public class RotateCue : MonoBehaviour {
         {
             transform.Rotate(0, 0, 1.2f);
 
+            totalAngle += 3f;
+
+            if(totalAngle > 365f)
+            {
+                totalAngle = 0f;
+            }
         }
 
         if (Input.GetButton("Fire2"))
         {
             transform.Rotate(0, 0, -1.2f);
-           
+            totalAngle -= 3f;
+
+            if (totalAngle < 0f)
+            {
+                totalAngle = 0f;
+            }
         }
     }
 
-  
+    float getTotalAngle()
+    {
+        //totalAngle = this.totalAngle;
+        totalAngle = totalAngle * Mathf.Deg2Rad;
+        return totalAngle;
+    }
+
+    internal static float getTotalAngle()
+    {
+        throw new NotImplementedException();
+    }
+
+    //float setTotalAngle(float totalAngle)
+    //{
+    //    return ayy;
+    //}
 }

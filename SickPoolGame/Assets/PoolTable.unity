@@ -352,7 +352,7 @@ GameObject:
   - 212: {fileID: 727795000}
   - 50: {fileID: 727795002}
   - 58: {fileID: 727795003}
-  - 114: {fileID: 727795004}
+  - 114: {fileID: 727795005}
   m_Layer: 8
   m_Name: whiteBall
   m_TagString: White Ball
@@ -427,7 +427,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.40762568
---- !u!114 &727795004
+--- !u!114 &727795005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -439,7 +439,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  speed: {x: 0, y: 0}
   simulated: 1
 --- !u!1 &1027191598
 GameObject:
@@ -758,6 +757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d4d94737da86a346ae2739279cfb77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalAngle: 0
 --- !u!114 &1738262150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -770,7 +770,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  speed: {x: 0, y: 0}
   simulated: 1
 --- !u!1 &1752370970
 GameObject:
