@@ -73,11 +73,13 @@
   <ItemGroup>
     <Compile Include="Assets\Standard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
     <Compile Include="Assets\Standard Assets\Scripts\General Scripts\AddForceToBall.cs" />
+    <Compile Include="Assets\Standard Assets\Scripts\General Scripts\ButtonToNext.cs" />
     <Compile Include="Assets\Standard Assets\Scripts\General Scripts\MouseControll.cs" />
     <Compile Include="Assets\Standard Assets\Scripts\General Scripts\OpenGame.cs" />
     <Compile Include="Assets\Standard Assets\Scripts\General Scripts\QuitGame.cs" />
     <Compile Include="Assets\Standard Assets\Scripts\General Scripts\RotateCue.cs" />
-    <Compile Include="Assets\Standard Assets\Scripts\creditsToMain.cs" />
+    <Compile Include="Assets\Standard Assets\Scripts\General Scripts\TableToMenu.cs" />
+    <Compile Include="Assets\Standard Assets\Scripts\General Scripts\creditsToMain.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets (Mobile)\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />

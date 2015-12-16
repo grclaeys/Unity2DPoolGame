@@ -27,16 +27,17 @@ public class AddForceToBall : MonoBehaviour {
    
     void OnCollisionEnter2D(Collision2D coll)
     {
-    
-       float totalAngle = RotateCue.getTotalAngle();
-       NewX = Mathf.Cos(totalAngle);
-       NewY = Mathf.Sin(totalAngle);
+
+        //float totalAngle = RotateCue.getTotalAngle();
+       float totalAngle = (((gameObject.transform.rotation.eulerAngles.z)) / 100);
+       NewX = Mathf.Cos(totalAngle) * Mathf.Rad2Deg;
+       NewY = Mathf.Sin(totalAngle) * Mathf.Rad2Deg;
 
         Vector2 components = new Vector2(NewX, NewY);
 
         //Vector2 ayy = new Vector2(1, 0);
 
-        GetComponent<Rigidbody2D>().AddForce(components * 370f);
+        GetComponent<Rigidbody2D>().AddForce(components * 12f);
         //GetComponent<Rigidbody2D>().AddForce(ayy * 370f);
         
     }

@@ -3,9 +3,9 @@ using System.Collections;
 using System;
 
 public class RotateCue : MonoBehaviour {
-    private float degree;
-    private float angle;
-    public float totalAngle = 90f;
+    private static float degree;
+    private static float angle;
+    public static float totalAngle = 120f;
 
     // Use this for initialization
     void Start ()
@@ -37,19 +37,20 @@ public class RotateCue : MonoBehaviour {
                 totalAngle = 0f;
             }
         }
+        
     }
 
-    float getTotalAngle()
+   public static float getTotalAngle()
     {
         //totalAngle = this.totalAngle;
         totalAngle = totalAngle * Mathf.Deg2Rad;
         return totalAngle;
     }
 
-    internal static float getTotalAngle()
-    {
-        throw new NotImplementedException();
-    }
+    //internal static float getTotalAngle()
+    //{
+    //    throw new NotImplementedException();
+    //}
 
     //float setTotalAngle(float totalAngle)
     //{
