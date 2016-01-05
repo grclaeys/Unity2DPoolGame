@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CreditsToMain : MonoBehaviour
+public class creditsToMain : MonoBehaviour
 {
 
 
