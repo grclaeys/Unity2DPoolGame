@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 95031773}
   - 60: {fileID: 95031774}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: hitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,9 +172,9 @@ GameObject:
   - 212: {fileID: 170984591}
   - 58: {fileID: 170984590}
   - 50: {fileID: 170984593}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 13
-  m_TagString: Untagged
+  m_TagString: Balls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -214,7 +214,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1583778319
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bfa7dfb81e51e254c996305e44795bcc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -257,9 +257,9 @@ GameObject:
   - 212: {fileID: 465330585}
   - 58: {fileID: 465330584}
   - 50: {fileID: 465330587}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 4
-  m_TagString: Untagged
+  m_TagString: Balls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -299,7 +299,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1583778319
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 45246764d185dee40bf1876416336286, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -342,9 +342,9 @@ GameObject:
   - 212: {fileID: 472150902}
   - 58: {fileID: 472150901}
   - 50: {fileID: 472150904}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 2
-  m_TagString: Untagged
+  m_TagString: Balls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -384,7 +384,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1583778319
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e66ca84ad66290f4da395d65e60a0b96, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -416,45 +416,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &507404712
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 507404713}
-  - 114: {fileID: 507404714}
-  m_Layer: 0
-  m_Name: QuitGame
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &507404713
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 507404712}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 600714422}
-  m_RootOrder: 0
---- !u!114 &507404714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 507404712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 424d8b9d5f4f38f40abcad804127162e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &515053891
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,9 +427,9 @@ GameObject:
   - 212: {fileID: 515053893}
   - 58: {fileID: 515053892}
   - 50: {fileID: 515053895}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 11
-  m_TagString: Untagged
+  m_TagString: Balls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -508,7 +469,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1583778319
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f3281f18dba11aa4d8a8eb59a3c4afd9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -624,8 +585,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 507404713}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!114 &600714423
@@ -705,7 +665,7 @@ GameObject:
   - 50: {fileID: 727795002}
   - 58: {fileID: 727795003}
   - 114: {fileID: 727795005}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: whiteBall
   m_TagString: White Ball
   m_Icon: {fileID: 0}
@@ -734,7 +694,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1073887601
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 235ce48c7ff59014983c7b3b882c709b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -803,9 +763,9 @@ GameObject:
   - 212: {fileID: 953837074}
   - 58: {fileID: 953837073}
   - 50: {fileID: 953837076}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 6
-  m_TagString: Untagged
+  m_TagString: Balls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -845,7 +805,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1583778319
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b842108c02175294d94e25d5604b00e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -942,9 +902,9 @@ GameObject:
   - 212: {fileID: 1065676527}
   - 58: {fileID: 1065676526}
   - 50: {fileID: 1065676529}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 1
-  m_TagString: Untagged
+  m_TagString: Balls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -984,7 +944,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1583778319
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6a94dc601329e7541a27903b753c4758, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1027,9 +987,9 @@ GameObject:
   - 212: {fileID: 1111123697}
   - 58: {fileID: 1111123696}
   - 50: {fileID: 1111123699}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 3
-  m_TagString: Untagged
+  m_TagString: Balls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1069,7 +1029,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1583778319
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ee85549061440df4f82bd818fc887eb7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1112,9 +1072,9 @@ GameObject:
   - 212: {fileID: 1196203852}
   - 58: {fileID: 1196203851}
   - 50: {fileID: 1196203854}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 15
-  m_TagString: Untagged
+  m_TagString: Balls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1154,7 +1114,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1583778319
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c52a4af85dcc34242ad84441b70eb7c4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1251,9 +1211,9 @@ GameObject:
   - 212: {fileID: 1561238264}
   - 58: {fileID: 1561238263}
   - 50: {fileID: 1561238266}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 8
-  m_TagString: Untagged
+  m_TagString: Balls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1293,7 +1253,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1583778319
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e937e0bff991c3a429746f32a9b73bcc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1390,9 +1350,9 @@ GameObject:
   - 212: {fileID: 1630476079}
   - 58: {fileID: 1630476078}
   - 50: {fileID: 1630476081}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 5
-  m_TagString: Untagged
+  m_TagString: Balls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1432,7 +1392,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1583778319
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ebb4031b13159c0449095a5f9d31655d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1475,9 +1435,9 @@ GameObject:
   - 212: {fileID: 1697400427}
   - 58: {fileID: 1697400426}
   - 50: {fileID: 1697400429}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 10
-  m_TagString: Untagged
+  m_TagString: Balls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1517,7 +1477,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1583778319
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3368e928bef13ca49867b0a0fe85bb35, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1564,7 +1524,7 @@ GameObject:
   - 114: {fileID: 1738262149}
   - 114: {fileID: 1738262150}
   - 61: {fileID: 1738262146}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pool Cue
   m_TagString: Pool Cue
   m_Icon: {fileID: 0}
@@ -1593,7 +1553,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1414959947
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5077061d5f6a4304a92004578a36da6b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1706,9 +1666,9 @@ GameObject:
   - 58: {fileID: 1752370975}
   - 58: {fileID: 1752370974}
   - 50: {fileID: 1752370978}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: table
-  m_TagString: Untagged
+  m_TagString: Table
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1876,7 +1836,7 @@ GameObject:
   - 60: {fileID: 1862235282}
   - 60: {fileID: 1862235281}
   - 60: {fileID: 1862235280}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: sockets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2055,9 +2015,9 @@ GameObject:
   - 212: {fileID: 1966213909}
   - 58: {fileID: 1966213908}
   - 50: {fileID: 1966213911}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 9
-  m_TagString: Untagged
+  m_TagString: Balls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2097,7 +2057,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1583778319
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 08b1ace857902ed44b2085773ee7c832, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2140,9 +2100,9 @@ GameObject:
   - 212: {fileID: 2026695926}
   - 58: {fileID: 2026695925}
   - 50: {fileID: 2026695928}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 14
-  m_TagString: Untagged
+  m_TagString: Balls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2182,7 +2142,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1583778319
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: b0d0d3a6346618447a17ebce0fe61334, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2225,9 +2185,9 @@ GameObject:
   - 212: {fileID: 2034531941}
   - 58: {fileID: 2034531940}
   - 50: {fileID: 2034531943}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 12
-  m_TagString: Untagged
+  m_TagString: Balls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2267,7 +2227,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1583778319
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 057e3b2987de5b44ba71b99d85d15717, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2310,9 +2270,9 @@ GameObject:
   - 212: {fileID: 2125695842}
   - 58: {fileID: 2125695841}
   - 50: {fileID: 2125695844}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 7
-  m_TagString: Untagged
+  m_TagString: Balls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2352,7 +2312,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1583778319
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: eb02c74cc78c22e4aa5ee5c5f1c7926b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
