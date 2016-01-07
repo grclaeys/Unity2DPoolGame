@@ -59,7 +59,7 @@ public class AddForceToBall : MonoBehaviour {
             Vector2 components = new Vector2(NewX, NewY);
             //Debug.Log(components.ToString());
             //Vector2 ayy = new Vector2(1, 0);
-            GetComponent<Rigidbody2D>().velocity = components * 20f;
+            GetComponent<Rigidbody2D>().velocity = components * 12f;
             //GetComponent<Rigidbody2D>().AddForce(components * 300f);
             //GetComponent<Rigidbody2D>().AddForce(ayy * 370f);
         }
