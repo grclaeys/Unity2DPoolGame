@@ -6,7 +6,8 @@ TagManager:
   tags:
   - Pool Cue
   - White Ball
-  - New Tag
+  - Balls
+  - Table
   layers:
   - Default
   - TransparentFX
@@ -16,10 +17,10 @@ TagManager:
   - UI
   - 
   - 
-  - PoolCue
-  - 
-  - 
-  - 
+  - Cue
+  - Balls
+  - WhiteBall
+  - Table
   - 
   - 
   - 
@@ -43,4 +44,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Balls To Cue
+    uniqueID: 2711188977
+    locked: 0
+  - name: Cue
+    uniqueID: 2880007349
+    locked: 0
+  - name: WhiteBall
+    uniqueID: 3221079695
+    locked: 0
+  - name: Table
+    uniqueID: 3924251559
     locked: 0
