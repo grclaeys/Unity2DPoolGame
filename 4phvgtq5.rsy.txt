@@ -1,0 +1,37 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   SickPoolGame/Assets/PoolTable.unity
+#	new file:   SickPoolGame/Assets/Standard Assets (Mobile)/poolCue.png
+#	new file:   SickPoolGame/Assets/Standard Assets (Mobile)/poolCue.png.meta
+#	new file:   SickPoolGame/Assets/poolCue.png
+#	new file:   SickPoolGame/Assets/poolCue.png.meta
+#	modified:   SickPoolGame/Library/CurrentLayout.dwlt
+#	modified:   SickPoolGame/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+#	modified:   SickPoolGame/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll.mdb
+#	modified:   SickPoolGame/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll
+#	modified:   SickPoolGame/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll.mdb
+#	modified:   SickPoolGame/Library/ScriptAssemblies/Assembly-UnityScript.dll
+#	modified:   SickPoolGame/Library/ScriptAssemblies/Assembly-UnityScript.dll.mdb
+#	modified:   SickPoolGame/Library/assetDatabase3
+#	modified:   SickPoolGame/Library/expandedItems
+#	modified:   SickPoolGame/Library/metadata/00/00000000000000004000000000000000
+#	new file:   SickPoolGame/Library/metadata/50/5077061d5f6a4304a92004578a36da6b
+#	new file:   SickPoolGame/Library/metadata/50/5077061d5f6a4304a92004578a36da6b.info
+#	new file:   SickPoolGame/Library/metadata/e1/e1691e2059bb77f4d8545a32843cb03c
+#	new file:   SickPoolGame/Library/metadata/e1/e1691e2059bb77f4d8545a32843cb03c.info
+#	modified:   SickPoolGame/Library/shadercompiler-32bit-1.log
+#	modified:   SickPoolGame/Library/shadercompiler-32bit-2.log
+#	modified:   SickPoolGame/Library/shadercompiler-32bit-3.log
+#	modified:   SickPoolGame/Library/shadercompiler-32bit-4.log
+#	modified:   SickPoolGame/Library/shadercompiler-64bit-1.log
+#	modified:   SickPoolGame/Library/shadercompiler-64bit-2.log
+#	modified:   SickPoolGame/Library/shadercompiler-64bit-3.log
+#	modified:   SickPoolGame/Library/shadercompiler-64bit-4.log
+#	modified:   SickPoolGame/SickPoolGame.sln
+#
+
