@@ -8,6 +8,8 @@ TagManager:
   - White Ball
   - Balls
   - Table
+  - Table Hole
+  - Scoreboard
   layers:
   - Default
   - TransparentFX

@@ -23,7 +23,7 @@ public class AddForceToBall : MonoBehaviour {
 
         totalAngle = (poolCue.transform.eulerAngles.z) % 360;
 
-        Debug.Log(totalAngle);
+        //Debug.Log(totalAngle);
     }
 
    
