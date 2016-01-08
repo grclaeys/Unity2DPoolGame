@@ -18,7 +18,7 @@ public class AddForceToBall : MonoBehaviour {
 
         if (Input.GetKeyDown("p"))
         {
-    
+            
         }
 
         totalAngle = (poolCue.transform.eulerAngles.z) % 360;
