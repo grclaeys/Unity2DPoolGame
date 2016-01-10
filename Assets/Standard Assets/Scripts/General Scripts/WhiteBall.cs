@@ -36,6 +36,6 @@ public class WhiteBall : AbstractPoolBall
         // and move the whiteball back to the center of the pool table
 
         scoreboard.UpdateScore(-1);
-        //Debug.Log("White Ball Scored!");
+        ResetPosition();
     }
 }

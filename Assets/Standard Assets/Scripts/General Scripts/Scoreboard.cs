@@ -25,6 +25,7 @@ public class Scoreboard : MonoBehaviour {
     public void Reset()
     {
         score = 0;
+        DrawScore();
     }
 
     private void DrawScore()

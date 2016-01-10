@@ -19,13 +19,10 @@ public abstract class AbstractPoolBall : MonoBehaviour
     {
         // Store original board position on start
         // so it can be reset to later
-        originalPos = GetComponent<Rigidbody2D>().position;
-        Debug.Log("starting");
+        originalPos = GetComponent<Transform>().position;
     }
 
-    public void Update()
-    {
-    }
+    public void Update() { }
 
     /// <summary>
     /// Handles pool ball collisions
@@ -55,6 +52,6 @@ public abstract class AbstractPoolBall : MonoBehaviour
     /// </summary>
     public void ResetPosition()
     {
-        GetComponent<Rigidbody2D>().position = originalPos;
+        GetComponent<Transform>().position = originalPos;
     }
 }
