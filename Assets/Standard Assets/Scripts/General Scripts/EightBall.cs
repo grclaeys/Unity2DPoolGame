@@ -17,6 +17,9 @@
         else
         {
             tableState.Win();
+            // also deactivate the eight ball so the eight ball doesn't
+            // bounce back in and win the game again
+            gameObject.SetActive(false);
         }
     }
 }

@@ -5,7 +5,8 @@ public class WhiteBall : AbstractPoolBall
     public new void Update()
     {
         base.Update();
-
+        
+        // Temporary code to move the ball for debugging purposes
         Vector2 newVelocity = GetComponent<Rigidbody2D>().velocity;
 
         if (Input.GetKey("a"))

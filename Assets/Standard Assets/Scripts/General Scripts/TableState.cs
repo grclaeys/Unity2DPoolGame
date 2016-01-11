@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class TableState : MonoBehaviour
 {
     public Scoreboard scoreboard;
+    public AudioSource victoryMusic;
 
     private AbstractPoolBall[] balls;
 
@@ -12,7 +13,6 @@ public class TableState : MonoBehaviour
         // Find all existing balls so that they can be reactivated
         // on reset
         balls = FindObjectsOfType<AbstractPoolBall>();
-        Debug.Log(balls.Length);
     }
 
 
@@ -54,7 +54,8 @@ public class TableState : MonoBehaviour
     /// </summary>
     public void Win()
     {
-        Debug.Log("You win");
+        // Plays the victory music
+        victoryMusic.PlayDelayed(0);
     }
 
     /// <returns>Returns true if all normal pool balls (not 8 or cue) have been scored</returns>
