@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
+//using UnityEngine.SceneManagement;
 
 public class TableState : MonoBehaviour
 {
@@ -21,9 +21,9 @@ public class TableState : MonoBehaviour
         // Exits back to main menu if escape is pressed
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("MainMenu");
+            //SceneManager.LoadScene("MainMenu");
             // may need to re-enable for unity 5.2
-            //Application.LoadLevel("MainMenu");
+            Application.LoadLevel("MainMenu");
         }
 
         // Resets the pool table if space is pressed

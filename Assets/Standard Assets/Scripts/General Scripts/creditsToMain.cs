@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
+//using UnityEngine.SceneManagement;
 
 public class creditsToMain : MonoBehaviour
 {
@@ -15,7 +15,8 @@ public class creditsToMain : MonoBehaviour
         // Exit from credits to main menu when escape is pressed
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("mainMenu");
+            Application.LoadLevel("mainMenu");
+            //SceneManager.LoadScene("mainMenu");
         }
     }
 }
