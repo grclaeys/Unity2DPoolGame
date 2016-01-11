@@ -5,11 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pool Cue
-  - White Ball
   - Balls
   - Table
   - Table Hole
   - Scoreboard
+  - Scoreboard Text
   layers:
   - Default
   - TransparentFX
@@ -47,15 +47,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Balls To Cue
-    uniqueID: 2711188977
-    locked: 0
-  - name: Cue
-    uniqueID: 2880007349
-    locked: 0
-  - name: WhiteBall
-    uniqueID: 3221079695
+  - name: Background
+    uniqueID: 1938221257
     locked: 0
   - name: Table
-    uniqueID: 3924251559
+    uniqueID: 349115759
+    locked: 0
+  - name: Cue
+    uniqueID: 222456641
+    locked: 0
+  - name: Balls
+    uniqueID: 1257407565
     locked: 0

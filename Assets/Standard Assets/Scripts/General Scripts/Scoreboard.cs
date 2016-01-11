@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class Scoreboard : MonoBehaviour {
 
@@ -17,6 +16,15 @@ public class Scoreboard : MonoBehaviour {
     public void UpdateScore(int deltaScore)
     {
         score += deltaScore;
+        DrawScore();
+    }
+
+    /// <summary>
+    /// Sets the score to 0
+    /// </summary>
+    public void Reset()
+    {
+        score = 0;
         DrawScore();
     }
 

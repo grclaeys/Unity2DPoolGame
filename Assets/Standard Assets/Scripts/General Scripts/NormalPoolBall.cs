@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 
-public class NormalPoolBall : AbstractPoolBall {
-    
+public class NormalPoolBall : AbstractPoolBall
+{
     protected override void OnScore()
     {
-        scoreboard.UpdateScore(1);
+        // on score normal pool balls add 1 to the total score and
+        // are removed from play
+        gameObject.SetActive(false);
 
-        //Debug.Log("Normal Ball Scored!");
+        scoreboard.UpdateScore(1);
     }
 }

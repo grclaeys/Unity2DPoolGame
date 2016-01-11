@@ -5,7 +5,8 @@ public class WhiteBall : AbstractPoolBall
     public new void Update()
     {
         base.Update();
-
+        
+        // Temporary code to move the ball for debugging purposes
         Vector2 newVelocity = GetComponent<Rigidbody2D>().velocity;
 
         if (Input.GetKey("a"))
@@ -36,6 +37,6 @@ public class WhiteBall : AbstractPoolBall
         // and move the whiteball back to the center of the pool table
 
         scoreboard.UpdateScore(-1);
-        //Debug.Log("White Ball Scored!");
+        ResetPosition();
     }
 }
