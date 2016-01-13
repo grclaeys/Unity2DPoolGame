@@ -2174,6 +2174,7 @@ GameObject:
   - 114: {fileID: 1738262149}
   - 114: {fileID: 1738262150}
   - 61: {fileID: 1738262146}
+  - 114: {fileID: 1738262151}
   m_Layer: 8
   m_Name: Pool Cue
   m_TagString: Pool Cue
@@ -2225,7 +2226,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1738262142}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27acebc9ad1110f6d00074c88d76c639, type: 3}
   m_Name: 
@@ -2255,7 +2256,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1738262142}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e46b3a54a3cea3e40835d389ae123bda, type: 3}
   m_Name: 
@@ -2283,7 +2284,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1738262142}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d4d94737da86a346ae2739279cfb77a, type: 3}
   m_Name: 
@@ -2294,13 +2295,24 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1738262142}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99b6455a8fde9c048ae58ec4beb137b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   poolCue: {fileID: 0}
   simulated: 1
+--- !u!114 &1738262151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1738262142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ca63f98b9326e41aec8eca0093c0f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1752370970
 GameObject:
   m_ObjectHideFlags: 0
