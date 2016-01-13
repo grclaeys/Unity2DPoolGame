@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acafffe5eb3a3254ba52971ed545079d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1694223576}
+  scoreboard: {fileID: 0}
 --- !u!1 &414890288
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,8 +286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07955dada8567214bb5726d14c40a106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1694223576}
-  victoryMusic: {fileID: 1345743590}
+  scoreboard: {fileID: 0}
+  victoryMusic: {fileID: 0}
 --- !u!4 &414890290
 Transform:
   m_ObjectHideFlags: 0
@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acafffe5eb3a3254ba52971ed545079d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1694223576}
+  scoreboard: {fileID: 0}
 --- !u!1 &472150900
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acafffe5eb3a3254ba52971ed545079d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1694223576}
+  scoreboard: {fileID: 0}
 --- !u!1 &507404712
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,7 +634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acafffe5eb3a3254ba52971ed545079d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1694223576}
+  scoreboard: {fileID: 0}
 --- !u!1 &596910924
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,7 +988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbfd9e2af421312469e4bd4efe4043a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1694223576}
+  scoreboard: {fileID: 0}
 --- !u!114 &727795005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1000,7 +1000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99b6455a8fde9c048ae58ec4beb137b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolCue: {fileID: 1738262148}
+  poolCue: {fileID: 0}
   simulated: 1
 --- !u!1 &835778883
 GameObject:
@@ -1171,7 +1171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acafffe5eb3a3254ba52971ed545079d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1694223576}
+  scoreboard: {fileID: 0}
 --- !u!1 &1027191598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,7 +1323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acafffe5eb3a3254ba52971ed545079d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1694223576}
+  scoreboard: {fileID: 0}
 --- !u!1 &1111123695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,7 +1421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acafffe5eb3a3254ba52971ed545079d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1694223576}
+  scoreboard: {fileID: 0}
 --- !u!1 &1196203850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1519,7 +1519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acafffe5eb3a3254ba52971ed545079d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1694223576}
+  scoreboard: {fileID: 0}
 --- !u!1 &1285637260
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,8 +1866,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8850647ee16e3e34b996878554528bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1694223576}
-  tableState: {fileID: 414890289}
+  scoreboard: {fileID: 0}
+  tableState: {fileID: 0}
 --- !u!1 &1610602311
 GameObject:
   m_ObjectHideFlags: 0
@@ -2019,7 +2019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acafffe5eb3a3254ba52971ed545079d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1694223576}
+  scoreboard: {fileID: 0}
 --- !u!1 &1694223574
 GameObject:
   m_ObjectHideFlags: 0
@@ -2060,7 +2060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07d5202d43a69140bd86c89fd69b92a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outputText: {fileID: 835778885}
+  outputText: {fileID: 0}
 --- !u!1 &1697400425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,7 +2158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acafffe5eb3a3254ba52971ed545079d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1694223576}
+  scoreboard: {fileID: 0}
 --- !u!1 &1738262142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2313,6 +2313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29ca63f98b9326e41aec8eca0093c0f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whiteBallTemplate: {fileID: 727795004}
 --- !u!1 &1752370970
 GameObject:
   m_ObjectHideFlags: 0
@@ -2885,7 +2886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acafffe5eb3a3254ba52971ed545079d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1694223576}
+  scoreboard: {fileID: 0}
 --- !u!1 &2026695924
 GameObject:
   m_ObjectHideFlags: 0
@@ -2983,7 +2984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acafffe5eb3a3254ba52971ed545079d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1694223576}
+  scoreboard: {fileID: 0}
 --- !u!1 &2034531939
 GameObject:
   m_ObjectHideFlags: 0
@@ -3081,7 +3082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acafffe5eb3a3254ba52971ed545079d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1694223576}
+  scoreboard: {fileID: 0}
 --- !u!1 &2125695840
 GameObject:
   m_ObjectHideFlags: 0
@@ -3179,7 +3180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acafffe5eb3a3254ba52971ed545079d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1694223576}
+  scoreboard: {fileID: 0}
 --- !u!1 &2126104809
 GameObject:
   m_ObjectHideFlags: 0

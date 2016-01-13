@@ -7,21 +7,31 @@ using System.Collections.Generic;
 /// </summary>
 public class WhiteBallShooter : MonoBehaviour {
     const float SCROLL_SCALE = 3.0f;
+    const float WHITE_BALL_LIFETIME = 3.0f;
 
-    private IList<int> shotBalls;
+    public WhiteBall whiteBallTemplate;
+
+    private Queue<ShotBall> shotBalls;
 
 	void Start ()
     {
-        shotBalls = new ArrayList();
+        shotBalls = new Queue<ShotBall>();
 	}
 	
-	// Update is called once per frame
 	void Update ()
     {
+        // Removes any white balls that have timed out
+        while ((shotBalls.Count != 0) && 
+                shotBalls.Peek().launchTime + WHITE_BALL_LIFETIME < Time.time)
+        {
+            Debug.Log("Destroying white ball");
+            Destroy(shotBalls.Dequeue().ball.gameObject);
+        }
+
+        // Rotates the pool cue
         float scroll = 0.0f;
         if (Input.GetButton("Fire1"))
         {
-            Debug.Log("left");
             scroll += 1.0f;
         }
         if (Input.GetButton("Fire2"))
@@ -30,10 +40,26 @@ public class WhiteBallShooter : MonoBehaviour {
         }
         GetComponent<Transform>().Rotate(Vector3.forward, scroll * SCROLL_SCALE);
 
+        // Shoots a new white ball if middle mouse is down
         if (Input.GetButton("Fire3"))
         {
-            Debug.Log("Shooting balls");
-
+            // Debug.Log("Shooting balls");
+            var newBall = Instantiate(whiteBallTemplate);
+            newBall.GetComponent<Rigidbody2D>().position = GetComponent<Transform>().position;
+            newBall.GetComponent<Rigidbody2D>().velocity.Set(1, 1);
+            shotBalls.Enqueue(new ShotBall(newBall));
         }
 	}
+
+    private struct ShotBall
+    {
+        public WhiteBall ball;
+        public float launchTime;
+
+        public ShotBall(WhiteBall ball)
+        {
+            this.ball = ball;
+            this.launchTime = Time.time;
+        }
+    }
 }
