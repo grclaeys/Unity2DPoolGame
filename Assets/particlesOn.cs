@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SillyShader : MonoBehaviour {
+public class particlesOn : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -10,9 +10,14 @@ public class SillyShader : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKey("k"))
+	 if(Input.GetKey("k"))
         {
             gameObject.GetComponent<ParticleSystem>().enableEmission = true;
+        }
+
+        if (Input.GetKey("j"))
+        {
+            gameObject.GetComponent<ParticleSystem>().enableEmission = false;
         }
     }
 }
