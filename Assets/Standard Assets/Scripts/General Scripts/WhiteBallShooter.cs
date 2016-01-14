@@ -6,8 +6,11 @@ using System.Collections.Generic;
 /// wheel and holding left click will shoot out temporary white balls
 /// </summary>
 public class WhiteBallShooter : MonoBehaviour {
-    const float SCROLL_SCALE = 3.0f;
+    const float CUE_MOVE_SPEED = 1.0f;
+    const float SCROLL_SCALE = 1.0f;
+
     const float WHITE_BALL_LIFETIME = 3.0f;
+    const float LAUNCHED_BALL_SPEED = 5.0f;
 
     public WhiteBall whiteBallTemplate;
 
@@ -24,7 +27,6 @@ public class WhiteBallShooter : MonoBehaviour {
         while ((shotBalls.Count != 0) && 
                 shotBalls.Peek().launchTime + WHITE_BALL_LIFETIME < Time.time)
         {
-            Debug.Log("Destroying white ball");
             Destroy(shotBalls.Dequeue().ball.gameObject);
         }
 
@@ -40,13 +42,25 @@ public class WhiteBallShooter : MonoBehaviour {
         }
         GetComponent<Transform>().Rotate(Vector3.forward, scroll * SCROLL_SCALE);
 
+        // Moves the pool cue towards the mouse position
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.position = Vector2.Lerp(transform.position, mousePosition, CUE_MOVE_SPEED);
+
         // Shoots a new white ball if middle mouse is down
         if (Input.GetButton("Fire3"))
         {
-            // Debug.Log("Shooting balls");
             var newBall = Instantiate(whiteBallTemplate);
-            newBall.GetComponent<Rigidbody2D>().position = GetComponent<Transform>().position;
-            newBall.GetComponent<Rigidbody2D>().velocity.Set(1, 1);
+            Vector2 cueDirection = GetComponent<Transform>().rotation * Vector3.up;
+            Vector2 ballPos = GetComponent<Transform>().position;
+            ballPos += (Vector2)GetComponent<BoxCollider2D>().bounds.size;
+
+            //Debug.Log(GetComponent<BoxCollider2D>().bounds.size.magnitude);
+            Debug.Log(GetComponent<Transform>().position + GetComponent<Transform>().localScale);
+
+            Vector3 ballVel = cueDirection * LAUNCHED_BALL_SPEED;
+
+            newBall.GetComponent<Rigidbody2D>().velocity = ballVel;
+            newBall.GetComponent<Rigidbody2D>().position = ballPos;
             shotBalls.Enqueue(new ShotBall(newBall));
         }
 	}
