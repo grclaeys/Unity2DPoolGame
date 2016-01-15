@@ -34,9 +34,9 @@ public class WhiteBall : AbstractPoolBall
     protected override void OnScore()
     {
         // When the white ball falls in a hole, deduct 1 from the total score
-        // and move the whiteball back to the center of the pool table
+        // and deactivate the whiteball
 
         scoreboard.UpdateScore(-1);
-        ResetPosition();
+        gameObject.SetActive(false);
     }
 }
