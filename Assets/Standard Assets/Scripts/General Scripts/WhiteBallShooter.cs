@@ -61,22 +61,27 @@ public class WhiteBallShooter : MonoBehaviour {
         {
             lastBallShot = Time.time;
             var newBall = Instantiate(whiteBallTemplate);
-            
-            // Activate the ball as the template is deactivated
-            newBall.gameObject.SetActive(true);
 
+            // Since the template ball is deactivated, the new ball needs to be activated
+            newBall.gameObject.SetActive(true);
+            
+            // Set the position of the ball to the tip of the pool cue and the velocity
+            // parallel to the direction of the pool cue
             Vector2 cueDirection = GetComponent<Transform>().rotation * Vector3.up;
             Vector2 ballPos = GetComponent<Transform>().position;
             Vector2 deltaPos = GetComponent<Transform>().rotation * Vector2.up;
-            ballPos += deltaPos * 3.5f; // pool cue width           
+            ballPos += deltaPos * 3.5f; // 3.5 = pool cue width approximation
 
             Vector3 ballVel = cueDirection * LAUNCHED_BALL_SPEED;
 
             newBall.GetComponent<Rigidbody2D>().velocity = ballVel;
             newBall.GetComponent<Rigidbody2D>().position = ballPos;
+
+            // Add the ball to the list of shot balls along with the current time so it can
+            // be deleted later
             shotBalls.Enqueue(new ShotBall(newBall));
         }
-	}
+    }
 
     private struct ShotBall
     {
