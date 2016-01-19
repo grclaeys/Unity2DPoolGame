@@ -4,7 +4,8 @@
 public class TableState : MonoBehaviour
 {
     public Scoreboard scoreboard;
-    public AudioSource victoryMusic;
+    public AudioSource victoryMusic; // The music to be played when all balls are scored and the game is won
+    public AudioSource backgroundMusic; // The default music to be played while the pool game is running
 
     private AbstractPoolBall[] balls;
 
@@ -44,6 +45,13 @@ public class TableState : MonoBehaviour
 
             // Set the score to 0
             scoreboard.Reset();
+
+            // Starts playing the background music if it wasn't playing already
+            // and stops the victory music if it was playing
+            if (!backgroundMusic.isPlaying)
+                backgroundMusic.PlayDelayed(0);
+            if (victoryMusic.isPlaying)
+                victoryMusic.Stop();
         }
     }
 
@@ -54,7 +62,8 @@ public class TableState : MonoBehaviour
     /// </summary>
     public void Win()
     {
-        // Plays the victory music
+        // Plays the victory music and pauses the normal background music
+        backgroundMusic.Stop();
         victoryMusic.PlayDelayed(0);
     }
 
