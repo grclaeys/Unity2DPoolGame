@@ -8,6 +8,7 @@ public class TableState : MonoBehaviour
     public AudioSource backgroundMusic; // The default music to be played while the pool game is running
 
     private AbstractPoolBall[] balls;
+    public UnityEngine.UI.Text outputText;
 
     void Start()
     {
@@ -50,6 +51,7 @@ public class TableState : MonoBehaviour
             // and stops the victory music if it was playing
             if (!backgroundMusic.isPlaying)
                 backgroundMusic.PlayDelayed(0);
+                DrawWinText();
             if (victoryMusic.isPlaying)
                 victoryMusic.Stop();
         }
@@ -84,6 +86,10 @@ public class TableState : MonoBehaviour
 
         // if no non scored normal pool balls were found return true
         return true;
+    }
+    private void DrawWinText()
+    {
+        outputText.text = string.Format("A WINNER IS YOU!");
     }
 }
 
