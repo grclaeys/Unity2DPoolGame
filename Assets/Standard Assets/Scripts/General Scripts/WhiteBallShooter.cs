@@ -14,10 +14,10 @@ public class WhiteBallShooter : MonoBehaviour {
     // the time in seconds white balls launched from this object last before being destroyed
     const float WHITE_BALL_LIFETIME = 3.0f;
     // the initial speed with which balls are launched
-    const float LAUNCHED_BALL_SPEED = 15.0f;
+    const float LAUNCHED_BALL_SPEED = 11.0f;
 
     // the time in seconds that must pass before launching another ball
-    const float BALL_SHOOT_INTERVAL = 0.25f;
+    const float BALL_SHOOT_INTERVAL = 0.85f;
 
     private float lastBallShot;
 
